@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner with Thumbnails and Animations</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="Icono.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner-container">
+            <div class="banner">
+            <img id="mainImage" src="banner.jpg" alt="Main Image">
+            <div class="banner-text loaded">
+            <h1 id="bannerTitle">Banner title 0</h1>
+             <p id="bannerDescription">Banner description 0. This is a brief description of what is shown in the image.</p>
+            <button  id="bannerButton" class="custom-btn btn-Orange"><span>Read More</span></button>
+            </div>
+            </div>
+            <div class="thumbnails">
+                <img class="thumbnail" src="img1.jpg" alt="Miniature 1" 
+                onclick="changeContent('img1.jpg', 'Banner 1', 'Banner description 1. This is a brief description of what is shown in the image.', 'More information')">
+                <img class="thumbnail" src="img2.jpg" alt="Miniature 2" 
+                onclick="changeContent('img2.jpg', 'Banner 2', 'Banner description 2. This is a brief description of what is shown in the image.', 'Discover more')">
+                <img class="thumbnail" src="img3.jpg" alt="Miniature 3" 
+                onclick="changeContent('img3.jpg', 'Banner 3', 'Banner description 3. This is a brief description of what is shown in the image.', 'More information')">
+                <img class="thumbnail" src="img4.jpg" alt="Miniature 4" 
+                onclick="changeContent('img4.jpg', 'Banner 4', 'Banner description 4. This is a brief description of what is shown in the image.', 'See more')">
+            </div>
+
+        </section>
+    </main>
+   <script src="animation.js"></script>
+
+</body>
+</html>
